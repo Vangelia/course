@@ -1,0 +1,79 @@
+.nav {
+    width: 57px;
+height: 24px;
+
+/* Link */
+font-family: 'Roboto';
+font-style: normal;
+font-weight: 500;
+font-size: 14px;
+line-height: 24px;
+/* identical to box height, or 171% */
+
+
+/* Dark */
+color: #111212;
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+}
+
+h1 {
+    color:darkmagenta
+}
+
+.product_card{
+    /* Card */
+
+
+/* Auto layout */
+
+display: flex;
+flex-direction: column;
+align-items: center;
+padding: 0px;
+
+width: 260px;
+height: 398px;
+
+/* White */
+
+background: #FFFFFF;
+
+/* Inside auto layout */
+
+flex: none;
+order: 0;
+flex-grow: 0;
+}
+
+.shop_menu{
+    /* Desktop App Use Case */
+
+
+width: 67px;
+height: 24px;
+
+/* Link */
+
+font-family: 'Roboto';
+font-style: normal;
+font-weight: 500;
+font-size: 14px;
+line-height: 24px;
+/* identical to box height, or 171% */
+
+
+/* Blue 700 */
+
+color: #4788F5;
+
+
+/* Inside auto layout */
+
+flex: none;
+order: 0;
+flex-grow: 0;
+}
