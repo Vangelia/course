@@ -14,7 +14,7 @@
     />
   </head>
 
-  <svg>
+  <svg class="sprite">
     <symbol
       id="facebook"
       width="16"
@@ -100,6 +100,30 @@
         fill="#111212"
       />
     </symbol>
+
+    <symbol
+      id="cart"
+      width="16"
+      height="16"
+      viewBox="0 0 16 16"
+      fill="none"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <g clip-path="url(#clip0_1137_2071)">
+        <path
+          d="M0.666626 0.666748H3.33329L5.11996 9.59342C5.18092 9.90035 5.3479 10.1761 5.59166 10.3723C5.83542 10.5685 6.14042 10.6727 6.45329 10.6667H12.9333C13.2462 10.6727 13.5512 10.5685 13.7949 10.3723C14.0387 10.1761 14.2057 9.90035 14.2666 9.59342L15.3333 4.00008H3.99996M14 14.0001C14 14.3683 13.7015 14.6667 13.3333 14.6667C12.9651 14.6667 12.6666 14.3683 12.6666 14.0001C12.6666 13.6319 12.9651 13.3334 13.3333 13.3334C13.7015 13.3334 14 13.6319 14 14.0001ZM6.66663 14.0001C6.66663 14.3683 6.36815 14.6667 5.99996 14.6667C5.63177 14.6667 5.33329 14.3683 5.33329 14.0001C5.33329 13.6319 5.63177 13.3334 5.99996 13.3334C6.36815 13.3334 6.66663 13.6319 6.66663 14.0001Z"
+          stroke="#111212"
+          stroke-width="1.33333"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+        />
+      </g>
+      <defs>
+        <clipPath id="clip0_1137_2071">
+          <rect width="16" height="16" fill="white" />
+        </clipPath>
+      </defs>
+    </symbol>
   </svg>
 
   <body>
@@ -110,7 +134,7 @@
             <img src="./IMAGE/Logo.svg" alt="Flowelowe" />
           </span>
           <span class="header_item contacts">
-            <svg class="social_icon">
+            <svg class="icon">
               <use xlink:href="#location"></use>
             </svg>
             Send flowers to
@@ -119,7 +143,7 @@
               <option>Город 2</option>
               <option>Город 3</option>
             </select>
-            <svg class="social_icon">
+            <svg class="icon">
               <use xlink:href="#phone"></use>
             </svg>
             <a class="phone" href="tel:+8 050 937 99 92">+8 050 937 99 92</a>
@@ -140,6 +164,9 @@
             <a href="#" class="nav_item"> About us </a>
           </nav>
           <div class="cart header_item">
+            <svg class="icon">
+              <use xlink:href="#cart"></use>
+            </svg>
             <a href="#"> Cart </a>
           </div>
         </div>

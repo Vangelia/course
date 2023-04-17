@@ -48,6 +48,10 @@
   font-display: swap;
 }
 
+.sprite {
+  display: none;
+}
+
 body {
   font-family: "Roboto", sans-serif;
 }
@@ -64,6 +68,13 @@ a {
 
 a:hover {
   color: var(--color-blue-700);
+}
+
+.icon {
+  width: 20px;
+  height: 20px;
+  margin-left: 2px;
+  margin-right: 2px;
 }
 
 .phone {
@@ -93,6 +104,11 @@ a:hover {
 
 .language {
   text-align: right;
+}
+
+.cart {
+  display: flex;
+  justify-content: center;
 }
 
 .contacts {
