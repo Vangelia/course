@@ -89,8 +89,6 @@
 
     <symbol
       id="phone"
-      width="17"
-      height="16"
       viewBox="0 0 17 16"
       fill="none"
       xmlns="http://www.w3.org/2000/svg"
@@ -134,19 +132,23 @@
             <img src="./IMAGE/Logo.svg" alt="Flowelowe" />
           </span>
           <span class="header_item contacts">
-            <svg class="icon">
-              <use xlink:href="#location"></use>
-            </svg>
-            Send flowers to
-            <select>
-              <option>Город 1</option>
-              <option>Город 2</option>
-              <option>Город 3</option>
-            </select>
-            <svg class="icon">
-              <use xlink:href="#phone"></use>
-            </svg>
-            <a class="phone" href="tel:+8 050 937 99 92">+8 050 937 99 92</a>
+            <div>
+              <svg class="icon">
+                <use xlink:href="#location"></use>
+              </svg>
+              Send flowers to
+              <select>
+                <option>Город 1</option>
+                <option>Город 2</option>
+                <option>Город 3</option>
+              </select>
+            </div>
+            <div>
+              <svg class="icon">
+                <use xlink:href="#phone"></use>
+              </svg>
+              <a class="phone" href="tel:+8 050 937 99 92">+8 050 937 99 92</a>
+            </div>
           </span>
           <span class="header_item language">
             <select>
@@ -163,7 +165,7 @@
             <a href="#" class="nav_item"> Shop </a>
             <a href="#" class="nav_item"> About us </a>
           </nav>
-          <div class="cart header_item">
+          <div>
             <svg class="icon">
               <use xlink:href="#cart"></use>
             </svg>
@@ -305,8 +307,8 @@
             relatives, friends and colleagues present him with flowers.
           </p>
           <div class="footer_item">
-            <input type="text" />
-            <button placeholder="E-mail">SUBSCRIBE</button>
+            <input type="text" class="email_field" placeholder="E-mail" />
+            <button type="button" class="button_blue">SUBSCRIBE</button>
           </div>
         </div>
       </div>
