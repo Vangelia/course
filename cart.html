@@ -89,8 +89,6 @@
 
     <symbol
       id="phone"
-      width="17"
-      height="16"
       viewBox="0 0 17 16"
       fill="none"
       xmlns="http://www.w3.org/2000/svg"
@@ -123,6 +121,44 @@
           <rect width="16" height="16" fill="white" />
         </clipPath>
       </defs>
+    </symbol>
+
+    <symbol
+      id="bin"
+      width="16"
+      height="16"
+      viewBox="0 0 16 16"
+      fill="none"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <path
+        d="M2 4H3.33333H14"
+        stroke="#111212"
+        stroke-width="1.33333"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+      />
+      <path
+        d="M5.33325 3.99992V2.66659C5.33325 2.31296 5.47373 1.97382 5.72378 1.72378C5.97383 1.47373 6.31296 1.33325 6.66659 1.33325H9.33325C9.68687 1.33325 10.026 1.47373 10.2761 1.72378C10.5261 1.97382 10.6666 2.31296 10.6666 2.66659V3.99992M12.6666 3.99992V13.3333C12.6666 13.6869 12.5261 14.026 12.2761 14.2761C12.026 14.5261 11.6869 14.6666 11.3333 14.6666H4.66659C4.31296 14.6666 3.97382 14.5261 3.72378 14.2761C3.47373 14.026 3.33325 13.6869 3.33325 13.3333V3.99992H12.6666Z"
+        stroke="#111212"
+        stroke-width="1.33333"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+      />
+      <path
+        d="M9.33325 7.33325V11.3333"
+        stroke="#111212"
+        stroke-width="1.33333"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+      />
+      <path
+        d="M6.66675 7.33325V11.3333"
+        stroke="#111212"
+        stroke-width="1.33333"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+      />
     </symbol>
   </svg>
 
@@ -178,98 +214,110 @@
     </header>
 
     <main>
+      <div class="container cart_headline">
+        <h1>Cart</h1>
+      </div>
       <div class="container">
-        <div class="product_card">
-          <span class="product_card_column product_card_column_image">
-            <img class="product_card_image" src="IMAGE/big_product_1.jpg" />
-          </span>
-          <span class="product_card_column">
-            <h1 class="product_card_name">Orange Rose España 70 cm</h1>
-            <div class="product_card_price">
-              <span class="old_price"> $1624.99 </span>
-              <span class="new_price"> $1024.99 </span>
-            </div>
-            <div class="product_card_details">
-              <span class="product_card_details_column">
-                <span class="product_card_details_title">Delivery date:</span>
-                <span class="product_card_details_value"
-                  >Tomorrow 12:15 - 12:45</span
-                >
-              </span>
-              <span class="product_card_details_column">
-                <span class="product_card_details_title">Categories: </span>
-                <span class="product_card_details_value"
-                  >Rose, Spain, Flowers</span
-                >
-              </span>
-              <span class="product_card_details_column">
-                <span class="product_card_details_title">Product Code: </span>
-                <span class="product_card_details_value">010140</span>
-              </span>
-            </div>
-            <div class="product_card_description">
-              <p>
-                Orange Rose Espana 70 cm involuntarily attracts the eye. And the
-                reason for this is its color - bright and joyful. This is one of
-                the newest varieties of roses, bred by crossing two flowers -
-                red and yellow. Espana has absorbed the meaning of these two
-                representatives of a great group. Only here longing and passion
-                turned into something brighter - into real joy
-              </p>
-            </div>
-            <div class="add_button_container">
+        <div>
+          <table class="cart_content">
+            <caption class="your_order">
+              Your order
+            </caption>
+            <tr class="table_row">
+              <th class="table_column_name">Product</th>
+              <th class="table_column_name">Quantity</th>
+              <th class="table_column_name">Total</th>
+              <th class="delete_column"></th>
+            </tr>
+            <tr class="table_row">
+              <td>
+                <div class="cart_content_product">
+                  <span
+                    ><img
+                      class="cart_content_product_img"
+                      src="IMAGE/product_1.jpg" /></span
+                  ><span class="cart_content_product_name"
+                    ><p>Orange Rose España 70 cm</p></span
+                  >
+                </div>
+              </td>
+              <td>
+                <div>
+                  <input
+                    class="product_card_amount"
+                    type="number"
+                    min="1"
+                    max="100"
+                  />
+                </div>
+              </td>
+              <td>
+                <div><h3>$98.98</h3></div>
+              </td>
+              <td class="delete_column">
+                <svg class="icon">
+                  <use xlink:href="#bin"></use>
+                </svg>
+              </td>
+            </tr>
+            <tr class="table_row">
+              <td>
+                <div class="cart_content_product">
+                  <span
+                    ><img
+                      class="cart_content_product_img"
+                      src="IMAGE/packaging.jpg" /></span
+                  ><span class="cart_content_product_name"
+                    ><p>Gift packaging</p></span
+                  >
+                </div>
+              </td>
+              <td>
+                <div>
+                  <input
+                    class="product_card_amount"
+                    type="number"
+                    min="1"
+                    max="100"
+                  />
+                </div>
+              </td>
+              <td>
+                <div><h3>$0.00</h3></div>
+              </td>
+              <td class="delete_column">
+                <svg class="icon">
+                  <use xlink:href="#bin"></use>
+                </svg>
+              </td>
+            </tr>
+          </table>
+        </div>
+
+        <div class="order_bottom">
+          <span class="order_botton_left"
+            ><form>
+              <p class="your_order">Additional information</p>
+              <p class="table_column_name">Order notes</p>
               <input
-                class="product_card_amount"
-                type="number"
-                min="1"
-                max="100"
-              />
-              <input class="button_red" type="button" value="ADD TO CART" />
+                type="text"
+                class="order_notes_textbox"
+                placeholder="Order notes"
+              /></form
+          ></span>
+
+          <span class="order_botton_right">
+            <div class="total">
+              <span><h3>Total:</h3></span>
+              <span><h2>$98.98</h2></span>
+            </div>
+            <div>
+              <p class="normal">Delivery cost is calculated at checkout</p>
+            </div>
+            <div>
+              <button type="button" class="button_red">Checkout</button>
             </div>
           </span>
-        </div>
-      </div>
-
-      <div class="related_products">
-        <h2 class="related_products_title">Related Products</h2>
-        <div class="product_list">
-          <div class="product_item">
-            <img class="product_image" src="IMAGE/product_1.jpg" />
-            <h3 class="product_title">Orange rose Espana 700 cm</h3>
-            <span class="product_price">$1024.99</span>
-          </div>
-
-          <div class="product_item">
-            <img class="product_image" src="IMAGE/product_1.jpg" />
-            <h3 class="product_title">Orange rose Espana 700 cm</h3>
-            <span class="product_price">$1024.99</span>
-          </div>
-
-          <div class="product_item">
-            <img class="product_image" src="IMAGE/product_1.jpg" />
-            <h3 class="product_title">Orange rose Espana 700 cm</h3>
-            <span class="product_price">$1024.99</span>
-          </div>
-
-          <div class="product_item">
-            <img class="product_image" src="IMAGE/product_1.jpg" />
-            <h3 class="product_title">Orange rose Espana 700 cm</h3>
-            <span class="product_price">$1024.99</span>
-          </div>
-
-          <div class="product_item">
-            <img class="product_image" src="IMAGE/product_1.jpg" />
-            <h3 class="product_title">Orange rose Espana 700 cm</h3>
-            <span class="product_price">$1024.99</span>
-          </div>
-        </div>
-      </div>
-
-      <div>
-        <div class="container">
-          <div class="header_item show_more">
-            <a href="#">Show more</a>
-          </div>
         </div>
       </div>
     </main>
@@ -333,7 +381,7 @@
             In an effort to worthily lead a person on his last journey,
             relatives, friends and colleagues present him with flowers.
           </p>
-          <div class="footer_item">
+          <div class="footer_item su">
             <input type="text" class="email_field" placeholder="E-mail" />
             <button type="button" class="button_blue">SUBSCRIBE</button>
           </div>
