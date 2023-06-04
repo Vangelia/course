@@ -17,8 +17,6 @@
   <svg class="sprite">
     <symbol
       id="facebook"
-      width="16"
-      height="16"
       viewBox="0 0 16 16"
       fill="none"
       xmlns="http://www.w3.org/2000/svg"
@@ -33,8 +31,6 @@
 
     <symbol
       id="twitter"
-      width="16"
-      height="13"
       viewBox="0 0 16 13"
       fill="none"
       xmlns="http://www.w3.org/2000/svg"
@@ -49,8 +45,6 @@
 
     <symbol
       id="viber"
-      width="16"
-      height="16"
       viewBox="0 0 16 16"
       fill="none"
       xmlns="http://www.w3.org/2000/svg"
@@ -65,8 +59,6 @@
 
     <symbol
       id="location"
-      width="17"
-      height="16"
       viewBox="0 0 17 16"
       fill="none"
       xmlns="http://www.w3.org/2000/svg"
@@ -101,8 +93,6 @@
 
     <symbol
       id="cart"
-      width="16"
-      height="16"
       viewBox="0 0 16 16"
       fill="none"
       xmlns="http://www.w3.org/2000/svg"
@@ -124,7 +114,7 @@
     </symbol>
   </svg>
 
-  <body>
+  <body class="empty_cart_body">
     <header>
       <div class="container">
         <div class="header_top header_row">
@@ -181,10 +171,12 @@
       </div>
       <div class="bag_empty">
         <div class="cart_icon_and_header">
-          <svg class="icon">
-            <use xlink:href="#cart"></use>
-          </svg>
-          <h2>Your bag is empty</h2>
+          <h2>
+            <svg class="icon">
+              <use xlink:href="#cart"></use>
+            </svg>
+            <span>Your bag is empty</span>
+          </h2>
         </div>
         <div>
           <button type="button" class="button_blue">Go to shop</button>
@@ -251,8 +243,8 @@
             In an effort to worthily lead a person on his last journey,
             relatives, friends and colleagues present him with flowers.
           </p>
-          <div class="footer_item su">
-            <input type="text" class="email_field" placeholder="E-mail" />
+          <div class="footer_item subscribe_field">
+            <input type="text" class="email_field input" placeholder="E-mail" />
             <button type="button" class="button_blue">SUBSCRIBE</button>
           </div>
         </div>

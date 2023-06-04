@@ -220,7 +220,7 @@
       <div class="container">
         <div>
           <table class="cart_content">
-            <caption class="your_order">
+            <caption class="order_header">
               Your order
             </caption>
             <tr class="table_row">
@@ -244,7 +244,7 @@
               <td>
                 <div>
                   <input
-                    class="product_card_amount"
+                    class="product_card_amount input"
                     type="number"
                     min="1"
                     max="100"
@@ -275,7 +275,7 @@
               <td>
                 <div>
                   <input
-                    class="product_card_amount"
+                    class="product_card_amount input"
                     type="number"
                     min="1"
                     max="100"
@@ -295,18 +295,17 @@
         </div>
 
         <div class="order_bottom">
-          <span class="order_botton_left"
+          <span class="order_bottom_left"
             ><form>
-              <p class="your_order">Additional information</p>
+              <div class="order_header">Additional information</div>
               <p class="table_column_name">Order notes</p>
-              <input
-                type="text"
+              <textarea
                 class="order_notes_textbox"
                 placeholder="Order notes"
-              /></form
+              ></textarea></form
           ></span>
 
-          <span class="order_botton_right">
+          <span class="order_bottom_right">
             <div class="total">
               <span><h3>Total:</h3></span>
               <span><h2>$98.98</h2></span>
@@ -381,8 +380,8 @@
             In an effort to worthily lead a person on his last journey,
             relatives, friends and colleagues present him with flowers.
           </p>
-          <div class="footer_item su">
-            <input type="text" class="email_field" placeholder="E-mail" />
+          <div class="footer_item subscribe_field">
+            <input type="text" class="email_field input" placeholder="E-mail" />
             <button type="button" class="button_blue">SUBSCRIBE</button>
           </div>
         </div>
