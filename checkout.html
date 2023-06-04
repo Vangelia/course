@@ -89,8 +89,6 @@
 
     <symbol
       id="phone"
-      width="17"
-      height="16"
       viewBox="0 0 17 16"
       fill="none"
       xmlns="http://www.w3.org/2000/svg"
@@ -124,9 +122,47 @@
         </clipPath>
       </defs>
     </symbol>
+
+    <symbol
+      id="bin"
+      width="16"
+      height="16"
+      viewBox="0 0 16 16"
+      fill="none"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <path
+        d="M2 4H3.33333H14"
+        stroke="#111212"
+        stroke-width="1.33333"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+      />
+      <path
+        d="M5.33325 3.99992V2.66659C5.33325 2.31296 5.47373 1.97382 5.72378 1.72378C5.97383 1.47373 6.31296 1.33325 6.66659 1.33325H9.33325C9.68687 1.33325 10.026 1.47373 10.2761 1.72378C10.5261 1.97382 10.6666 2.31296 10.6666 2.66659V3.99992M12.6666 3.99992V13.3333C12.6666 13.6869 12.5261 14.026 12.2761 14.2761C12.026 14.5261 11.6869 14.6666 11.3333 14.6666H4.66659C4.31296 14.6666 3.97382 14.5261 3.72378 14.2761C3.47373 14.026 3.33325 13.6869 3.33325 13.3333V3.99992H12.6666Z"
+        stroke="#111212"
+        stroke-width="1.33333"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+      />
+      <path
+        d="M9.33325 7.33325V11.3333"
+        stroke="#111212"
+        stroke-width="1.33333"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+      />
+      <path
+        d="M6.66675 7.33325V11.3333"
+        stroke="#111212"
+        stroke-width="1.33333"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+      />
+    </symbol>
   </svg>
 
-  <body>
+  <body class="checkout_body">
     <header>
       <div class="container">
         <div class="header_top header_row">
@@ -178,99 +214,142 @@
     </header>
 
     <main>
-      <div class="container">
-        <div class="product_card">
-          <span class="product_card_column product_card_column_image">
-            <img class="product_card_image" src="IMAGE/big_product_1.jpg" />
-          </span>
-          <span class="product_card_column">
-            <h1 class="product_card_name">Orange Rose España 70 cm</h1>
-            <div class="product_card_price">
-              <span class="old_price"> $1624.99 </span>
-              <span class="new_price"> $1024.99 </span>
+      <div class="container cart_headline">
+        <h1>Checkout</h1>
+      </div>
+
+      <div class="container checkout">
+        <div class="checkout_column">
+          <div class="order_header">Billing details</div>
+
+          <div class="form_column">
+            <div class="half_field">
+              <label class="table_column_name">First name</label>
+              <input class="first_name" type="text" placeholder="First name" />
             </div>
-            <div class="product_card_details">
-              <span class="product_card_details_column">
-                <span class="product_card_details_title">Delivery date:</span>
-                <span class="product_card_details_value"
-                  >Tomorrow 12:15 - 12:45</span
-                >
-              </span>
-              <span class="product_card_details_column">
-                <span class="product_card_details_title">Categories: </span>
-                <span class="product_card_details_value"
-                  >Rose, Spain, Flowers</span
-                >
-              </span>
-              <span class="product_card_details_column">
-                <span class="product_card_details_title">Product Code: </span>
-                <span class="product_card_details_value">010140</span>
-              </span>
+
+            <div class="half_field">
+              <label class="table_column_name">Last name</label>
+              <input class="last_name" type="text" placeholder="Last name" />
             </div>
-            <div class="product_card_description">
-              <p>
-                Orange Rose Espana 70 cm involuntarily attracts the eye. And the
-                reason for this is its color - bright and joyful. This is one of
-                the newest varieties of roses, bred by crossing two flowers -
-                red and yellow. Espana has absorbed the meaning of these two
-                representatives of a great group. Only here longing and passion
-                turned into something brighter - into real joy
-              </p>
+          </div>
+
+          <div class="field">
+            <label class="table_column_name">Company name</label>
+            <input
+              class="company_name"
+              type="text"
+              placeholder="Company name"
+            />
+          </div>
+
+          <div class="field">
+            <label class="table_column_name">Company name</label>
+            <select class="country_name" placeholder="Country name">
+              <option>Country 1</option>
+              <option>Country 2</option>
+              <option>Country 3</option>
+              <option>Country 4</option>
+            </select>
+          </div>
+
+          <div class="field">
+            <label class="table_column_name">First name</label>
+            <input
+              class="street_address"
+              type="text"
+              placeholder="Street address"
+            />
+          </div>
+
+          <div class="form_column">
+            <div class="half_field">
+              <label class="table_column_name">Phone</label>
+              <input class="phone_number" type="tel" placeholder="Phone" />
             </div>
-            <div class="add_button_container">
+
+            <div class="half_field">
+              <label class="table_column_name">Email address</label>
               <input
-                class="product_card_amount"
-                type="number"
-                min="1"
-                max="100"
+                class="email_address"
+                type="email"
+                placeholder="Email address"
               />
-              <input class="button_red" type="button" value="ADD TO CART" />
             </div>
-          </span>
+          </div>
+        </div>
+
+        <div class="checkout_column">
+          <div class="order_header">Your order</div>
+
+          <div class="grey_area">
+            <div class="inside_grey_area">
+              <table class="short_cart_content">
+                <tr class="short_table_row">
+                  <th class="table_column_name">Product</th>
+                  <th class="table_column_name">Total</th>
+                </tr>
+
+                <tr class="short_table_row">
+                  <td>
+                    <h3>Orange Rose España 70 cm × 1</h3>
+                  </td>
+                  <td>
+                    <h3>$98.98</h3>
+                  </td>
+                </tr>
+
+                <tr class="short_table_row">
+                  <td>
+                    <h3>Subtotal</h3>
+                  </td>
+                  <td>
+                    <h3>$98.98</h3>
+                  </td>
+                </tr>
+
+                <tr class="short_table_row">
+                  <td>
+                    <h3>Total</h3>
+                  </td>
+                  <td>
+                    <h3>$98.98</h3>
+                  </td>
+                </tr>
+              </table>
+
+              <div class="white_area">
+                <input class="radio_button" type="radio" id="bank_transfer" />
+                <label class="table_column_name radio_label" for="bank_transfer"
+                  >Direct bank transfer
+                </label>
+
+                <input class="radio_button" type="radio" id="cash" />
+                <label class="table_column_name radio_label" for="cash"
+                  >Cash on delivery
+                </label>
+
+                <div class="order_div">
+                  <button type="button" class="button_red button_order">
+                    Order
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
 
-      <div class="related_products">
-        <h2 class="related_products_title">Related Products</h2>
-        <div class="product_list">
-          <div class="product_item">
-            <img class="product_image" src="IMAGE/product_1.jpg" />
-            <h3 class="product_title">Orange rose Espana 700 cm</h3>
-            <span class="product_price">$1024.99</span>
-          </div>
-
-          <div class="product_item">
-            <img class="product_image" src="IMAGE/product_1.jpg" />
-            <h3 class="product_title">Orange rose Espana 700 cm</h3>
-            <span class="product_price">$1024.99</span>
-          </div>
-
-          <div class="product_item">
-            <img class="product_image" src="IMAGE/product_1.jpg" />
-            <h3 class="product_title">Orange rose Espana 700 cm</h3>
-            <span class="product_price">$1024.99</span>
-          </div>
-
-          <div class="product_item">
-            <img class="product_image" src="IMAGE/product_1.jpg" />
-            <h3 class="product_title">Orange rose Espana 700 cm</h3>
-            <span class="product_price">$1024.99</span>
-          </div>
-
-          <div class="product_item">
-            <img class="product_image" src="IMAGE/product_1.jpg" />
-            <h3 class="product_title">Orange rose Espana 700 cm</h3>
-            <span class="product_price">$1024.99</span>
-          </div>
-        </div>
-      </div>
-
-      <div>
-        <div class="container">
-          <div class="header_item show_more">
-            <a href="#">Show more</a>
-          </div>
-        </div>
+      <div class="container order_bottom">
+        <span class="order_bottom_left"
+          ><form>
+            <div class="order_header">Additional information</div>
+            <p class="table_column_name">Order notes</p>
+            <textarea
+              class="order_notes_textbox"
+              placeholder="Order notes"
+            ></textarea></form
+        ></span>
       </div>
     </main>
 

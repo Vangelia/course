@@ -17,8 +17,6 @@
   <svg class="sprite">
     <symbol
       id="facebook"
-      width="16"
-      height="16"
       viewBox="0 0 16 16"
       fill="none"
       xmlns="http://www.w3.org/2000/svg"
@@ -33,8 +31,6 @@
 
     <symbol
       id="twitter"
-      width="16"
-      height="13"
       viewBox="0 0 16 13"
       fill="none"
       xmlns="http://www.w3.org/2000/svg"
@@ -49,8 +45,6 @@
 
     <symbol
       id="viber"
-      width="16"
-      height="16"
       viewBox="0 0 16 16"
       fill="none"
       xmlns="http://www.w3.org/2000/svg"
@@ -65,8 +59,6 @@
 
     <symbol
       id="location"
-      width="17"
-      height="16"
       viewBox="0 0 17 16"
       fill="none"
       xmlns="http://www.w3.org/2000/svg"
@@ -89,8 +81,6 @@
 
     <symbol
       id="phone"
-      width="17"
-      height="16"
       viewBox="0 0 17 16"
       fill="none"
       xmlns="http://www.w3.org/2000/svg"
@@ -103,8 +93,6 @@
 
     <symbol
       id="cart"
-      width="16"
-      height="16"
       viewBox="0 0 16 16"
       fill="none"
       xmlns="http://www.w3.org/2000/svg"
@@ -126,7 +114,7 @@
     </symbol>
   </svg>
 
-  <body>
+  <body class="empty_cart_body">
     <header>
       <div class="container">
         <div class="header_top header_row">
@@ -178,98 +166,20 @@
     </header>
 
     <main>
-      <div class="container">
-        <div class="product_card">
-          <span class="product_card_column product_card_column_image">
-            <img class="product_card_image" src="IMAGE/big_product_1.jpg" />
-          </span>
-          <span class="product_card_column">
-            <h1 class="product_card_name">Orange Rose España 70 cm</h1>
-            <div class="product_card_price">
-              <span class="old_price"> $1624.99 </span>
-              <span class="new_price"> $1024.99 </span>
-            </div>
-            <div class="product_card_details">
-              <span class="product_card_details_column">
-                <span class="product_card_details_title">Delivery date:</span>
-                <span class="product_card_details_value"
-                  >Tomorrow 12:15 - 12:45</span
-                >
-              </span>
-              <span class="product_card_details_column">
-                <span class="product_card_details_title">Categories: </span>
-                <span class="product_card_details_value"
-                  >Rose, Spain, Flowers</span
-                >
-              </span>
-              <span class="product_card_details_column">
-                <span class="product_card_details_title">Product Code: </span>
-                <span class="product_card_details_value">010140</span>
-              </span>
-            </div>
-            <div class="product_card_description">
-              <p>
-                Orange Rose Espana 70 cm involuntarily attracts the eye. And the
-                reason for this is its color - bright and joyful. This is one of
-                the newest varieties of roses, bred by crossing two flowers -
-                red and yellow. Espana has absorbed the meaning of these two
-                representatives of a great group. Only here longing and passion
-                turned into something brighter - into real joy
-              </p>
-            </div>
-            <div class="add_button_container">
-              <input
-                class="product_card_amount"
-                type="number"
-                min="1"
-                max="100"
-              />
-              <input class="button_red" type="button" value="ADD TO CART" />
-            </div>
-          </span>
-        </div>
+      <div class="container cart_headline">
+        <h1>Cart</h1>
       </div>
-
-      <div class="related_products">
-        <h2 class="related_products_title">Related Products</h2>
-        <div class="product_list">
-          <div class="product_item">
-            <img class="product_image" src="IMAGE/product_1.jpg" />
-            <h3 class="product_title">Orange rose Espana 700 cm</h3>
-            <span class="product_price">$1024.99</span>
-          </div>
-
-          <div class="product_item">
-            <img class="product_image" src="IMAGE/product_1.jpg" />
-            <h3 class="product_title">Orange rose Espana 700 cm</h3>
-            <span class="product_price">$1024.99</span>
-          </div>
-
-          <div class="product_item">
-            <img class="product_image" src="IMAGE/product_1.jpg" />
-            <h3 class="product_title">Orange rose Espana 700 cm</h3>
-            <span class="product_price">$1024.99</span>
-          </div>
-
-          <div class="product_item">
-            <img class="product_image" src="IMAGE/product_1.jpg" />
-            <h3 class="product_title">Orange rose Espana 700 cm</h3>
-            <span class="product_price">$1024.99</span>
-          </div>
-
-          <div class="product_item">
-            <img class="product_image" src="IMAGE/product_1.jpg" />
-            <h3 class="product_title">Orange rose Espana 700 cm</h3>
-            <span class="product_price">$1024.99</span>
-          </div>
+      <div class="bag_empty">
+        <div class="cart_icon_and_header">
+          <h2>
+            <svg class="icon">
+              <use xlink:href="#cart"></use>
+            </svg>
+            <span>Your bag is empty</span>
+          </h2>
         </div>
-      </div>
-
-      <div>
-        <div class="container">
-          <div class="header_item show_more">
-            <a href="#">Show more</a>
-          </div>
+        <div>
+          <button type="button" class="button_blue">Go to shop</button>
         </div>
       </div>
     </main>
